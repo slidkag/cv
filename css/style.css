@@ -1,0 +1,371 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+@import url(https://fonts.googleapis.com/css?family=Amatica+SC);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
+*{
+	box-sizing: border-box;
+	/* descuenta del width y height, lo sumado en padding y border */
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+}
+
+ul, ol{
+	/*list-style: none; *//* elimina la viñeta */
+	margin-left: 6%;
+	margin-right: 3%;
+	padding: 0;
+	/*list-style-type: square;*/
+	list-style-image: url('../images/bullet.png');
+}
+
+h4 {
+	text-decoration:none;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	font-weight: bold;
+	color: #2799FF;
+	text-shadow: 2px 2px 8px #9BEFFF;
+}
+
+figure{
+	margin: 0;
+}
+.main-header hr{
+	width: 20%
+}
+
+img {
+	max-width: 100%;
+}
+
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.main-header{
+	width: 100%;
+	padding: 20px 0;
+	position: relative;
+	padding: 2%;
+}
+
+.main-header h1{
+	font-family:'Amatica SC';
+	display: inline;
+	font-size: 3em;
+	color: #2799FF
+}
+
+.container .main-header p{
+	font-family: 'Poiret One';
+	letter-spacing: 0.1em;
+	margin-top: -0.5%;
+}
+
+/*a {
+	font:Poiret one;
+	margin-top: -200px;
+	border: solid 1px green;
+	display: inline;
+	float: left;
+}*/
+
+
+.cleaner{
+	clear: both;
+}
+
+.profile-pic{
+	width: 200px;
+	height: 200px;
+	background-image: url(../images/profile.png);
+	float: right;
+	text-align: center; 
+	border: solid 2px black;
+	border-radius: 20%;
+	position: absolute;
+		top: 10%;
+		right: 2%;
+}
+
+.barrita{
+	margin-bottom: 3%;
+	width: 20%;
+}
+
+.icons{
+	margin-right: 1%;
+	margin-top: 2%;
+}
+
+.fa-twitter-square{
+	font-size: 32px !important;
+	color: #2799FF;
+}
+
+.fa-html5{
+	font-size: 100px !important;
+	color: #2799FF;
+}
+
+.fa-css3{
+	font-size: 100px !important;
+	color: #2799FF;
+}
+
+.fa-github-square{
+	font-size: 32px !important;
+	color: #2799FF
+}
+
+.fa-linkedin-square{
+	font-size: 32px !important;
+	color: #2799FF
+}
+
+.fa-user {
+	color: black;
+	margin-left: 10px;
+}
+
+.fa-cogs{
+	color: black;
+	margin-bottom: 15px;
+}
+
+.fa-pencil{
+	color: black;
+	margin-bottom: 15px;
+}
+
+.fa-envelope{
+	color: black;
+	margin-bottom: 15px;
+}
+
+.barra-divisora{
+	max-width:70%;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	align:center;
+	text-align:center;
+
+}
+
+.limite {
+	border: solid 1px red;
+	background-color: green;
+	margin: 0px;
+}
+
+.profile{
+	margin-left: 2.5%;
+	font-size:2em;
+	align-items: center;
+	font-family:'Amatica SC', cursive;
+	padding: 20px 0px 0px 0px;
+	color: #2799FF
+}
+
+.text{
+	margin-left: 2.5%;
+	margin-right: 5%;
+	font-family: 'Poiret One';
+	letter-spacing: 0.1em;
+}
+
+
+.rating{
+	color: #FFE255;
+	text-align: center;
+}
+
+.skill-text{
+	font-family: 'Poiret One';
+	text-align:center;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+article ul li{
+	font-weight: bold;
+}
+
+.contact-form{
+	margin-bottom: 10px;
+	width: 88%;
+	height: 10em;
+	font-size: 16px;
+	margin-left: 6%;
+}
+
+.contact-form input{
+	height: 40%;
+	width: 100%;
+	font-family: 'Poiret One';
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 2%;
+	display: inline;
+/*	border: solid 1px red;
+*/}
+.contact-form textarea{
+	width: 100%;
+	height: 87%;
+	color: grey;
+	font-family: 'Poiret One';
+}
+
+.form-l{
+	width: 48%;
+	/*background-color: red;*/
+	height: 10em;
+	float: left;
+}
+
+.form-r{
+	width: 48%;
+	height: 10em;
+	float: right;
+}
+
+.contact-button{
+	border: none;
+	background-color: #06B4F2;
+	color: #FFF;
+	margin-left: 44%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	width: 12%;
+	height: 2em;
+	font-family:'Amatica SC', cursive;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.footer{
+	background-color: #06B4F2;
+	text-align: center;
+	font-family: 'Poiret One';
+}
+
+/*Inicio navegacion Fluida*/
+
+@media (max-width:800px) {
+	.container, .main-header{
+		width: 90%;
+	}
+
+	/*.profile-pic{
+
+	}*/
+
+	.contact-form textarea{
+		height: 85%;
+	}
+
+	.profile{
+		margin: auto; 
+	}
+	.profile-pic{
+		position: absolute;
+		top: 10%;
+		right: -20px;
+	}
+}
+
+
+@media (max-width:600px){
+	* {
+		font-family: sans-serif;
+		letter-spacing: normal;
+	}
+
+	.main-header h1{
+		text-align: center;
+		font-family: 'Amatica SC' !important;
+		display: block;
+		margin-top: 160px;
+		text-align: center;	
+		margin-left: 18%;
+		margin-bottom: 0.3em;
+	}
+
+	.profile-pic{
+		display: block;
+		position: absolute;
+			top:3%;
+			left: 42%;
+		width: 150px;
+		height: 150px;
+	}
+	
+	.container .main-header p{
+		text-align: center;
+		letter-spacing: normal;
+		margin-left: 18%;
+
+	}
+
+	.barrita{
+		display: none;
+	}
+	.small{
+		text-align: center;
+	}
+
+	.text{
+		text-align: center;
+	}
+
+	ul, ol{
+	list-style: none;
+	}
+	
+	.contact-form{
+		align:center;
+	}
+
+	.contact-form input{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	.contact-form textarea{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	
+	.form-l{
+		width: 100%;
+	}
+	.form-r{
+		width: 100%;
+	}
+
+	.contact-button{
+	margin-left: 44%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	width: 12%;
+	height: 2em;
+	font-family:'Amatica SC', cursive;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+}
