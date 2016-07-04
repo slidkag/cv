@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
 @import url(https://fonts.googleapis.com/css?family=Amatica+SC);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(normalize.css);
 
 
 *{
@@ -126,6 +127,9 @@ img {
 	color: #2799FF;
 }
 
+.fa-jsfiddle{
+	font-size: 100px !important;
+}
 .fa-github-square{
 	font-size: 32px !important;
 	color: #2799FF
@@ -177,29 +181,45 @@ img {
 	align-items: center;
 	font-family:'Amatica SC', cursive;
 	padding: 20px 0px 0px 0px;
-	color: #2799FF
+	color: #2799FF;	
 }
 
+.table-profile{
+	font-size:2em;
+	font-family:'Amatica SC', cursive;
+	padding: 20px 0px 0px 0px;
+	color: #2799FF;
+	width: 23.120%;
+	float: left;
+	text-align: center;
+	margin-right: 2.5%;
+	margin-bottom: 3%;
+}
+
+		/*TRAMPA*/
+.table-profile:nth-child(5){
+	margin-right: 0%;
+/*	background-color: red;*/
+}
+
+		/*TRAMPA*/
+.table-profile img{
+	padding-bottom: 20px;
+}
 .text{
 	margin-left: 2.5%;
-	margin-right: 5%;
+	margin-right: 2.5%;
 	font-family: 'Poiret One';
 	letter-spacing: 0.1em;
 }
 
-
 .rating{
 	color: #FFE255;
-	text-align: center;
 }
 
 .skill-text{
 	font-family: 'Poiret One';
-	text-align:center;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	padding-left: 4%;
-	padding-right: 4%;
+	font-size: 14px;
 }
 
 article ul li{
@@ -289,11 +309,7 @@ article ul li{
 }
 
 
-@media (max-width:600px){
-	* {
-		font-family: sans-serif;
-		letter-spacing: normal;
-	}
+@media (max-width:650px){
 
 	.main-header h1{
 		text-align: center;
@@ -318,18 +334,19 @@ article ul li{
 		text-align: center;
 		letter-spacing: normal;
 		margin-left: 18%;
-
 	}
 
 	.barrita{
 		display: none;
 	}
+
 	.small{
 		text-align: center;
 	}
 
-	.text{
+	.text, .skill-text{
 		text-align: center;
+		font-family: sans-serif;
 	}
 
 	ul, ol{
@@ -367,5 +384,16 @@ article ul li{
 	font-size: 1.5em;
 	font-weight: bold;
 }
+	.table-profile{
+		width:48%;
+}
+
+	.table-profile:nth-of-type(even) {
+			margin-right: 0;
+	}
+
+	.ajuste{
+		margin-left: 4em;
+	}
 
 }
